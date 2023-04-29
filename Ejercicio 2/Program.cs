@@ -39,6 +39,31 @@ namespace Ejercicio_2
             //definido en la clase casa comercial
 
             cc.aniadirVehiculo(new Vehiculo(1, marca, modelo, km, precio, anio));
+            //ver los vehiculos registrados
+            Console.WriteLine("Desea mostrar los vehiculos? S/N");
+            string resp3 = Console.ReadLine();
+            if (resp3 == "S" || resp3 == "s")
+            {
+                Console.WriteLine("A continuación se mostraran todos los vehiculos registrado");
+                cc2.mostrarVehiculos();
+
+            }
+            //vaciar todos los vehiculos registrados
+            cc.vaciarVehiculo();
+
+            //eleminar todos los vehiculos
+            Console.WriteLine("Desea eliminar todos los vehiculos? S/N");
+            string resp2 = Console.ReadLine();
+            if (resp2 == "S" || resp2 == "s")
+            {
+                cc.eliminarVehiculo();
+            }
+            else
+            {
+                Console.WriteLine("Cancelado.");
+            }
+
+
         }
     }
 }

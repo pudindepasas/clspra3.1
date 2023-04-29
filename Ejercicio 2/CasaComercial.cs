@@ -51,5 +51,45 @@ namespace Ejercicio_2
             }
 
         }
+
+        public void mostrarVehiculos()
+        {
+            foreach (Vehiculo v in this.vehiculos)
+            {
+                Console.WriteLine("------------");
+                Console.WriteLine(v.ToString());
+            }
+
+        }
+
+        public void vaciarVehiculo()
+        {
+            Console.WriteLine("Está segguro desea eliminar todos los elementos mostrados en la lista?: S/N");
+            string response = Console.ReadLine();
+            if (response == "S" || response == "s")
+            {
+                vehiculos = new List<Vehiculo>();
+                this.total = 0;
+                Console.WriteLine("Se han eliminado los objetos correctamente");
+
+            }
+            else
+            {
+                Console.WriteLine("No se eliminó, Hay {0} vehiculos registrados", total);
+                Console.WriteLine("Enter para continuar.");
+            }
+            Console.ReadLine();
+        }
+        
+        public void eliminarVehiculo()
+        {
+            vehiculos.Clear();
+            total = 0;
+            Console.WriteLine("Se ha eliminado el vehiculo", total);
+            Console.ReadLine();
+
+        }
+
+
     }
 }
