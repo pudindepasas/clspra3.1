@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA1AB811-B72A-44B2-A924-F394C8480493}</ProjectGuid>
+    <ProjectGuid>{02F77D5B-DEE4-435B-A8E3-CC9F45DC30EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Ejercicio_10</RootNamespace>
     <AssemblyName>Ejercicio 10</AssemblyName>
@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Directivo.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Empresa.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
