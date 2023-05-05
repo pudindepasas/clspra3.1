@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_6
 {
-    public class Forma
+    class Forma
     {
-        protected Ubicacion c;
+        public double area;
+        public double perimetro;
+        public Ubicacion coordenada;
 
-        public string Info()
+        public double Area { get => area; set => area = value; }
+        public double Perimetro { get => perimetro; set => perimetro = value; }
+
+        public virtual double CalArea()
         {
-            return string.Empty;
+            return Area;
         }
 
-        public double Area()
+        public virtual double CalPerimetro()
         {
-            return 0.000;
+            return Perimetro;
         }
 
-        public double Perimetro()
+        public override string ToString()
         {
-            return 0.000;
+            return "Area: " + Area + "\n" + "Perimetro: " + Perimetro;
         }
     }
 }

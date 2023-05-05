@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_6
 {
-    public class Ubicacion
+    class Ubicacion
     {
-        private double x, y;
+        private double x;
+        private double y;
+
+        public Ubicacion(double x, double y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        private double X { get => x; set => x = value; }
+        private double Y { get => y; set => y = value; }
     }
 }

@@ -6,8 +6,28 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_6
 {
-    public class Circulo : Forma
+    class Circulo : Forma
     {
-        protected double radius;
+
+        protected double radio;
+
+        public Circulo(double radio)
+        {
+            this.radio = radio;
+        }
+
+        protected double Radio { get => radio; set => radio = value; }
+
+        public override double CalArea()
+        {
+            Area = Math.PI * (radio * 2);
+            return base.CalArea();
+        }
+
+        public override double CalPerimetro()
+        {
+            Perimetro = (2 * Math.PI) * radio;
+            return base.CalPerimetro();
+        }
     }
 }
