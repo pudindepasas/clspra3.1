@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_6
 {
-    internal class Program
+    public class Ubicacion
     {
-        static void Main(string[] args)
-        {
-           
-
-        }
+        private double x, y;
     }
 }

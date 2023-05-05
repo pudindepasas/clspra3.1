@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_6
 {
-    internal class Program
+    public class Circulo : Forma
     {
-        static void Main(string[] args)
-        {
-           
-
-        }
+        protected double radius;
     }
 }

@@ -8,34 +8,35 @@ namespace Ejercicio_4
 {
     class Vehiculo
     {
-        //Definimos los campos de la clase
+        // Definimos Los campos de la clases
         int id;
         string marca;
-        string modelo;
+        string model;
         int km;
         decimal precio;
-        int anio;
+        int annio;
 
-        public Vehiculo(int id, string marca, string modelo, int km, decimal precio, int anio)
+        public Vehiculo(int id, string marca, string model, int km, decimal precio, int annio)
         {
             this.Id = id;
             this.Marca = marca;
-            this.Modelo = modelo;
+            this.Model = model;
             this.Km = km;
             this.Precio = precio;
-            this.Anio = anio;
+            this.Annio = annio;
         }
 
+        // propiedades
         public int Id { get => id; set => id = value; }
         public string Marca { get => marca; set => marca = value; }
-        public string Modelo { get => modelo; set => modelo = value; }
+        public string Model { get => model; set => model = value; }
         public int Km { get => km; set => km = value; }
         public decimal Precio { get => precio; set => precio = value; }
-        public int Anio { get => anio; set => anio = value; }
+        public int Annio { get => annio; set => annio = value; }
 
         public override string ToString()
         {
-            return "Modelo " + modelo + "\n" + "Marca " + marca + "\n" + "Kilometraje " + km + "\n" + "Precio " + precio + "\n" + "Año " + anio + "\n";
+            return "Modelo: " + Model + "\nMarca: " + Marca + "\nKilometraje: " + Km + "\nPrecio: " + Precio + "\nAnnio: " + Annio;
         }
     }
 }
